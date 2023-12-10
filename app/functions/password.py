@@ -1,4 +1,8 @@
-# Funcion de crear contrasena aleatoria
+# Funcion de crear contrasena aleatoria.
+# La contraseña generada de manera aleatoria contiene numeros, letras y caracteres especiales.
+# Se utiliza la funcion shuffle para mezclar los caracteres (barajar).
+# Se utiliza la funcion join para concatenar los elementos de la contraseña.
+# Se retorna un string de caracteres randomicos.
 
 import random
 import string
@@ -20,8 +24,10 @@ def generar_contrasena_randomica(tamanio: int):
     return contrasena
 
 
-# Funcion de validar contrasena ingresada
-
+# Funcion de validar contrasena ingresada.
+# Se valida que la contraseña contenga un número, una letra y un caracter especial.
+# También se valida el tamaño de 8 a 15 caracteres.
+# Si se cumplen las cuatro condiciones, se retorna un True, caso contrario un False.
 def validar_contrasena_manual(contrasena: str):
     contiene_numero = False
     contiene_letras = False
