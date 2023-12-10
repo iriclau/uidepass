@@ -6,13 +6,14 @@
 
 import random
 import string
+from tkinter.ttk import Label
 
 letras = string.ascii_letters
 numeros = string.digits
 caracteres_especiales = string.punctuation
 
 
-def generar_contrasena_randomica(tamanio: int):
+def generar_contrasena_randomica(tamanio: int, label:Label):
     lista_contrasena = []
 
     lista_contrasena = lista_contrasena + random.choices(letras, k=int(tamanio / 3))
@@ -21,7 +22,8 @@ def generar_contrasena_randomica(tamanio: int):
 
     random.shuffle(lista_contrasena)
     contrasena = "".join(lista_contrasena)
-    return contrasena
+
+    label.config(text=contrasena)
 
 
 # Funcion de validar contrasena ingresada.
