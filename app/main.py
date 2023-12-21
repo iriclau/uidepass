@@ -1,4 +1,15 @@
-from views.contrasena_nueva_view import contrasena_nueva
-from functions.password import generar_contrasena_randomica,validar_contrasena_manual
+import sys
 
-contrasena_nueva()
+from PyQt6.QtWidgets import QApplication
+
+from app.views.ventana_principal import VentanaPrincipal
+
+
+def main():
+    app=QApplication(sys.argv)
+    ventana_principal=VentanaPrincipal()
+    ventana_principal.show()
+    sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()
