@@ -16,14 +16,15 @@ class VentanaListaContrasenas(QMainWindow, Ui_VentanaListaContrasenas):
         self.lista_contrasenas = []
         self.llena_tabla()
         self.btn_crear_nueva.clicked.connect(self.abrir_pantalla_nueva_contrasena)
+        self.btn_cerrar_sesion.clicked.connect(self.cerrar_sesion)
 
+    def cerrar_sesion(self):
+        self.close()
     def abrir_pantalla_nueva_contrasena(self):
         self.ventana_nueva_contrasena = VentanaNuevaContrasena(self.ruta_archivo, self)
         self.ventana_nueva_contrasena.show()
 
     def llena_tabla(self):
-        print( "llenar tabla")
-        print(self.ruta_archivo)
         self.lista_contrasenas = []
         with open(self.ruta_archivo, "r") as archivo:
             for linea in archivo:

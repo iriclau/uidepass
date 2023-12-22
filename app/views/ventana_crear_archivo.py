@@ -13,6 +13,10 @@ class VentanaCrearArchivo(QMainWindow, Ui_VentanaCrearArchivo):
 
         self.btn_crear_archivo.clicked.connect(self.crear_archivo)
         self.btn_seleccionar_donde_guardar.clicked.connect(self.seleccionar_donde_guardar)
+        self.btn_cancelar.clicked.connect(self.cerrar)
+
+    def cerrar(self):
+        self.close()
 
     def seleccionar_donde_guardar(self):
         path_carpeta = QFileDialog.getExistingDirectory(self, "seleccionar una carpeta")

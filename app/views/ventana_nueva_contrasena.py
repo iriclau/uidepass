@@ -1,4 +1,3 @@
-from PyQt6.QtCore import pyqtSignal
 from PyQt6.QtWidgets import QMainWindow
 
 from app.functions.password import generar_contrasena_randomica
@@ -15,6 +14,10 @@ class VentanaNuevaContrasena(QMainWindow, Ui_VentanaNuevaContrasena):
 
         self.setupUi(self)
         self.btn_generar.clicked.connect(self.generar_contrasena)
+        self.btn_cancelar.clicked.connect(self.cancelar)
+
+    def cancelar(self):
+        self.close()
 
     def generar_contrasena(self):
         cuenta = self.input_cuenta.text()
