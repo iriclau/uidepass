@@ -13,7 +13,10 @@ numeros = string.digits
 caracteres_especiales = string.punctuation
 
 
-def generar_contrasena_randomica(tamanio: int, label:Label):
+def generar_contrasena_randomica(tamanio: int):
+
+    caracteres_especiales.replace(";", ",")
+
     lista_contrasena = []
 
     lista_contrasena = lista_contrasena + random.choices(letras, k=int(tamanio / 3))
@@ -23,7 +26,7 @@ def generar_contrasena_randomica(tamanio: int, label:Label):
     random.shuffle(lista_contrasena)
     contrasena = "".join(lista_contrasena)
 
-    label.config(text=contrasena)
+    return contrasena
 
 
 # Funcion de validar contrasena ingresada.

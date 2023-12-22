@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file '.\app\views\design\ventana_principal.ui'
+# Form implementation generated from reading ui file '.\app\views\qt\design\ventana_principal.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -12,9 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_VentanaPrincipal(object):
     def setupUi(self, VentanaPrincipal):
         VentanaPrincipal.setObjectName("VentanaPrincipal")
-        VentanaPrincipal.resize(515, 448)
+        VentanaPrincipal.resize(435, 289)
         self.label = QtWidgets.QLabel(parent=VentanaPrincipal)
-        self.label.setGeometry(QtCore.QRect(150, 60, 171, 20))
+        self.label.setGeometry(QtCore.QRect(110, 20, 171, 20))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(14)
@@ -24,7 +24,7 @@ class Ui_VentanaPrincipal(object):
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.horizontalLayoutWidget = QtWidgets.QWidget(parent=VentanaPrincipal)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(60, 100, 391, 80))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(30, 50, 391, 80))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -36,14 +36,11 @@ class Ui_VentanaPrincipal(object):
         self.btn_seleccionar_archivo.setObjectName("btn_seleccionar_archivo")
         self.horizontalLayout.addWidget(self.btn_seleccionar_archivo)
         self.verticalLayoutWidget = QtWidgets.QWidget(parent=VentanaPrincipal)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(140, 180, 231, 121))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(100, 130, 231, 121))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.input_contrasena_principal = QtWidgets.QLineEdit(parent=self.verticalLayoutWidget)
-        self.input_contrasena_principal.setObjectName("input_contrasena_principal")
-        self.verticalLayout.addWidget(self.input_contrasena_principal)
         self.btn_ver_contrasenas = QtWidgets.QPushButton(parent=self.verticalLayoutWidget)
         self.btn_ver_contrasenas.setObjectName("btn_ver_contrasenas")
         self.verticalLayout.addWidget(self.btn_ver_contrasenas)
