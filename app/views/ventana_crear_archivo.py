@@ -25,7 +25,6 @@ class VentanaCrearArchivo(QMainWindow, Ui_VentanaCrearArchivo):
             self.label_ruta_carpeta.setText(path_carpeta)
 
     def crear_archivo(self):
-        print("estamos aqui")
         nombre_archivo = self.input_nombre_archivo.text()
         nombre_archivo_mas_extension = nombre_archivo + ".uidepass"
 
