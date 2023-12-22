@@ -12,21 +12,29 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_VentanaListaContrasenas(object):
     def setupUi(self, VentanaListaContrasenas):
         VentanaListaContrasenas.setObjectName("VentanaListaContrasenas")
-        VentanaListaContrasenas.resize(613, 532)
+        VentanaListaContrasenas.resize(500, 350)
         self.horizontalLayoutWidget = QtWidgets.QWidget(parent=VentanaListaContrasenas)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(120, 40, 381, 80))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(50, -10, 381, 80))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.btn_crear_nueva = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Berlin Sans FB")
+        font.setPointSize(10)
+        self.btn_crear_nueva.setFont(font)
         self.btn_crear_nueva.setObjectName("btn_crear_nueva")
         self.horizontalLayout.addWidget(self.btn_crear_nueva)
         self.btn_cerrar_sesion = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Berlin Sans FB")
+        font.setPointSize(10)
+        self.btn_cerrar_sesion.setFont(font)
         self.btn_cerrar_sesion.setObjectName("btn_cerrar_sesion")
         self.horizontalLayout.addWidget(self.btn_cerrar_sesion)
         self.table_lista_contrasenas = QtWidgets.QTableView(parent=VentanaListaContrasenas)
-        self.table_lista_contrasenas.setGeometry(QtCore.QRect(140, 160, 351, 291))
+        self.table_lista_contrasenas.setGeometry(QtCore.QRect(70, 50, 351, 291))
         self.table_lista_contrasenas.setObjectName("table_lista_contrasenas")
 
         self.retranslateUi(VentanaListaContrasenas)
@@ -34,6 +42,6 @@ class Ui_VentanaListaContrasenas(object):
 
     def retranslateUi(self, VentanaListaContrasenas):
         _translate = QtCore.QCoreApplication.translate
-        VentanaListaContrasenas.setWindowTitle(_translate("VentanaListaContrasenas", "Dialog"))
+        VentanaListaContrasenas.setWindowTitle(_translate("VentanaListaContrasenas", "UIDEPASS"))
         self.btn_crear_nueva.setText(_translate("VentanaListaContrasenas", "Crear nueva"))
         self.btn_cerrar_sesion.setText(_translate("VentanaListaContrasenas", "Cerrar sesión"))

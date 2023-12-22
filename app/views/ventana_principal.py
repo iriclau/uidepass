@@ -26,6 +26,7 @@ class VentanaPrincipal(QMainWindow, Ui_VentanaPrincipal):
         ruta_archivo, _ =QFileDialog.getOpenFileName(self, "seleccionar archivo", "", "archivos uidepass (*.uidepass)")
         if ruta_archivo:
             self.ruta_archivo = ruta_archivo
+            self.label_ruta_archivo.setText(ruta_archivo)
 
     def ver_lista_contrasenas(self):
         self.ventana_lista_contrasenas = VentanaListaContrasenas(self.ruta_archivo)

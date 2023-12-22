@@ -6,17 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>435</width>
-    <height>289</height>
+    <width>500</width>
+    <height>350</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>UIDEPASS</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>160</x>
      <y>20</y>
      <width>171</width>
      <height>20</height>
@@ -24,10 +24,10 @@
    </property>
    <property name="font">
     <font>
-     <family>Georgia</family>
+     <family>Lucida Calligraphy</family>
      <pointsize>14</pointsize>
      <italic>true</italic>
-     <bold>false</bold>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -40,8 +40,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>50</y>
+     <x>60</x>
+     <y>60</y>
      <width>391</width>
      <height>80</height>
     </rect>
@@ -49,6 +49,13 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QPushButton" name="btn_crear_archivo">
+      <property name="font">
+       <font>
+        <family>Berlin Sans FB</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
       <property name="text">
        <string>Crear archivo</string>
       </property>
@@ -56,6 +63,12 @@
     </item>
     <item>
      <widget class="QPushButton" name="btn_seleccionar_archivo">
+      <property name="font">
+       <font>
+        <family>Berlin Sans FB</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Seleccionar archivo</string>
       </property>
@@ -66,8 +79,8 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>130</y>
+     <x>150</x>
+     <y>210</y>
      <width>231</width>
      <height>121</height>
     </rect>
@@ -75,12 +88,49 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QPushButton" name="btn_ver_contrasenas">
+      <property name="font">
+       <font>
+        <family>Berlin Sans FB</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Ver contraseñas</string>
       </property>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_ruta_archivo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>431</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Berlin Sans FB</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
   </widget>
  </widget>
  <resources/>

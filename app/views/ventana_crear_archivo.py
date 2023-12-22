@@ -22,6 +22,7 @@ class VentanaCrearArchivo(QMainWindow, Ui_VentanaCrearArchivo):
         path_carpeta = QFileDialog.getExistingDirectory(self, "seleccionar una carpeta")
         if path_carpeta:
             self.path_carpeta = path_carpeta
+            self.label_ruta_carpeta.setText(path_carpeta)
 
     def crear_archivo(self):
         print("estamos aqui")
