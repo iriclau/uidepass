@@ -28,16 +28,13 @@ class VentanaCrearArchivo(QMainWindow, Ui_VentanaCrearArchivo):
         nombre_archivo = self.input_nombre_archivo.text()
         nombre_archivo_mas_extension = nombre_archivo + ".uidepass"
 
-        try:
-            self.ruta_archivo = self.path_carpeta + "/" + nombre_archivo_mas_extension
+        self.ruta_archivo = self.path_carpeta + "/" + nombre_archivo_mas_extension
 
-            with open(self.path_carpeta + "/" + nombre_archivo_mas_extension, "w") as archivo:
-                pass
-            archivo.close()
-        except Exception as error:
-            print(error)
+        with open(self.ruta_archivo, "w") as archivo:
+            pass
+        archivo.close()
 
         self.ventana_lista_contrasenas = VentanaListaContrasenas(self.ruta_archivo)
-        print("mostrando pantalla")
+
         self.ventana_lista_contrasenas.show()
         self.close()
